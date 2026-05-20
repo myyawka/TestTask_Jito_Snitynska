@@ -40,7 +40,7 @@
    Reset + base
    ===================================================== */
 *, *::before, *::after { box-sizing: border-box; }
-html { -webkit-text-size-adjust: 100%; scroll-behavior: smooth; }
+html { -webkit-text-size-adjust: 100%; text-size-adjust: 100%; scroll-behavior: smooth; }
 body {
   margin: 0;
   font-family: var(--sans);
@@ -1758,6 +1758,7 @@ em { font-style: italic; }
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  -webkit-user-select: none;
   user-select: none;
   padding-bottom: 0;
   margin-bottom: -2vw;
