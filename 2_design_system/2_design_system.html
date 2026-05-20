@@ -1,0 +1,1001 @@
+﻿<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title></title>
+  <meta name="description" content="The KostnГ¦r Design System вЂ” a calm, intentional, minimal wellness interface language for a Scandinavian nutrition app." />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="2_design_system.css" />
+  <link rel="stylesheet" href="../navigation.css" />
+</head>
+<body>
+
+  <!-- ===================== HERO ===================== -->
+  <header class="hero">
+    <div class="hero__grain" aria-hidden="true"></div>
+    <span class="shape shape--leaf" aria-hidden="true"></span>
+    <span class="shape shape--ring" aria-hidden="true"></span>
+    <span class="shape shape--blob" aria-hidden="true"></span>
+    <span class="shape shape--seed" aria-hidden="true"></span>
+
+    <nav class="topbar" aria-label="Primary">
+      <a class="topbar__brand" href="../index.html">
+        <span class="topbar__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4c-5 6-5 12 0 18 5-6 5-12 0-18Z" />
+            <path d="M16 22v6" />
+          </svg>
+        </span>
+        <span class="topbar__name">Kostnær</span>
+      </a>
+      <ul class="topbar__nav">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="../1_branding/1_branding.html">Branding</a></li>
+        <li><a href="./2_design_system.html" aria-current="page">System</a></li>
+        <li><a href="../3_screens/3_screens.html">Screens</a></li>
+      </ul>
+      <span class="topbar__meta">Vol. 02 · Spring 2026</span>
+    </nav>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <p class="eyebrow">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          Calories Calculator App Design System
+        </p>
+        <h1 class="hero__title">
+          Kostnær<br />
+          <em>Design</em> System
+        </h1>
+        <p class="hero__lede">
+          A calm, intentional interface language built for mindful nutrition.
+          Every component, color, and curve is shaped by the Scandinavian
+          principle of <em>lagom</em> вЂ” just enough, never more вЂ” so the app
+          feels like a quiet companion rather than a coach.
+        </p>
+
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="../index.html">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 12H5"/><path d="M12 19l-7-7 7-7"/></svg>
+            Back to Home
+          </a>
+          <a class="btn btn--secondary" href="../1_branding/1_branding.html">Branding</a>
+          <a class="btn btn--ghost" href="../3_screens/3_screens.html">
+            Key Screens
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <aside class="hero__card" aria-label="System overview">
+        <div class="hero__card-row">
+          <span class="hero__card-key">System</span>
+          <span class="hero__card-val">Kostnær / OS-02</span>
+        </div>
+        <div class="hero__card-row">
+          <span class="hero__card-key">Discipline</span>
+          <span class="hero__card-val">Mobile В· Nutrition</span>
+        </div>
+        <div class="hero__card-row">
+          <span class="hero__card-key">Mood</span>
+          <span class="hero__card-val">Quiet В· Organic В· Warm</span>
+        </div>
+        <div class="hero__card-row">
+          <span class="hero__card-key">Edition</span>
+          <span class="hero__card-val">May 2026</span>
+        </div>
+        <div class="hero__card-foot">
+          <span class="hero__card-swatch" style="--c:var(--cream)"></span>
+          <span class="hero__card-swatch" style="--c:var(--sage)"></span>
+          <span class="hero__card-swatch" style="--c:var(--birch)"></span>
+          <span class="hero__card-swatch" style="--c:var(--stone)"></span>
+          <span class="hero__card-swatch" style="--c:var(--mist)"></span>
+        </div>
+      </aside>
+    </div>
+
+    <div class="hero__ticker" aria-hidden="true">
+      <div class="hero__ticker-track">
+        <span>Nourish with intention</span><span>В·</span>
+        <span>Quiet confidence</span><span>В·</span>
+        <span>Organic minimalism</span><span>В·</span>
+        <span>Nordic wellness</span><span>В·</span>
+        <span>Lagom just enough</span><span>В·</span>
+        <span>Nourish with intention</span><span>В·</span>
+        <span>Quiet confidence</span><span>В·</span>
+        <span>Organic minimalism</span><span>В·</span>
+        <span>Nordic wellness</span><span>В·</span>
+        <span>Lagom just enough</span><span>В·</span>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===================== COLOR PALETTE ===================== -->
+  <section class="section section--palette" id="palette">
+    <header class="section__head">
+      <span class="section__index">01</span>
+      <div>
+        <p class="section__kicker">The Palette</p>
+        <h2 class="section__title">A landscape, <em>not a swatch.</em></h2>
+        <p class="section__lede">
+          Pulled from birch forests, sun-warmed stone, and the first light
+          on linen. Cream and mist carry the canvas; sage holds intention;
+          birch warms the hand; stone speaks only when it must.
+        </p>
+      </div>
+    </header>
+
+    <div class="palette">
+      <article class="swatch swatch--hero" style="--c:var(--cream); --ink:var(--stone);">
+        <div class="swatch__chip">
+          <span class="swatch__num">01</span>
+          <span class="swatch__role">Canvas В· primary surface</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Cream</h3>
+          <p class="swatch__hex">#F5F0E8</p>
+          <p class="swatch__use">The breath between elements. Default backgrounds, large containers, the morning light of the system.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--sage); --ink:var(--white);">
+        <div class="swatch__chip">
+          <span class="swatch__num">02</span>
+          <span class="swatch__role">Signature</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Sage</h3>
+          <p class="swatch__hex">#8FA882</p>
+          <p class="swatch__use">Primary actions, brand voice, progress.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--sage-light); --ink:var(--sage-dark);">
+        <div class="swatch__chip">
+          <span class="swatch__num">03</span>
+          <span class="swatch__role">Whisper</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Sage Light</h3>
+          <p class="swatch__hex">#C5D4BF</p>
+          <p class="swatch__use">Hover states, tags, subtle fills.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--sage-dark); --ink:var(--cream);">
+        <div class="swatch__chip">
+          <span class="swatch__num">04</span>
+          <span class="swatch__role">Anchor</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Sage Dark</h3>
+          <p class="swatch__hex">#4A6B3E</p>
+          <p class="swatch__use">Emphasis, headings on light, focus.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--birch); --ink:var(--stone);">
+        <div class="swatch__chip">
+          <span class="swatch__num">05</span>
+          <span class="swatch__role">Warmth</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Birch</h3>
+          <p class="swatch__hex">#D4C5A9</p>
+          <p class="swatch__use">Accents, illustration, soft moments.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--birch-dark); --ink:var(--cream);">
+        <div class="swatch__chip">
+          <span class="swatch__num">06</span>
+          <span class="swatch__role">Bark</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Birch Dark</h3>
+          <p class="swatch__hex">#A89270</p>
+          <p class="swatch__use">Secondary text, decorative lines.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--stone); --ink:var(--cream);">
+        <div class="swatch__chip">
+          <span class="swatch__num">07</span>
+          <span class="swatch__role">Type</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Stone</h3>
+          <p class="swatch__hex">#2C2C28</p>
+          <p class="swatch__use">Body text, icons, the system's voice.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--mist); --ink:var(--sage-dark);">
+        <div class="swatch__chip">
+          <span class="swatch__num">08</span>
+          <span class="swatch__role">Calm</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Mist</h3>
+          <p class="swatch__hex">#E8EDE6</p>
+          <p class="swatch__use">Cards, dividers, second-layer surfaces.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--frost); --ink:var(--sage-dark);">
+        <div class="swatch__chip">
+          <span class="swatch__num">09</span>
+          <span class="swatch__role">Frost</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>Frost</h3>
+          <p class="swatch__hex">#EEF2EE</p>
+          <p class="swatch__use">Input fields, quiet panels.</p>
+        </div>
+      </article>
+
+      <article class="swatch" style="--c:var(--white); --ink:var(--stone);">
+        <div class="swatch__chip">
+          <span class="swatch__num">10</span>
+          <span class="swatch__role">Linen</span>
+        </div>
+        <div class="swatch__meta">
+          <h3>White</h3>
+          <p class="swatch__hex">#FAFAF7</p>
+          <p class="swatch__use">Elevated surfaces, sheets, modals.</p>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== TYPOGRAPHY ===================== -->
+  <section class="section section--type" id="typography">
+    <header class="section__head section__head--center">
+      <span class="section__index">02</span>
+      <div>
+        <p class="section__kicker">Typography</p>
+        <h2 class="section__title">Set in <em>two voices.</em></h2>
+        <p class="section__lede">
+          DM Serif Display carries headlines like inked letterpress вЂ” slow,
+          confident, generous in its italics. DM Sans answers in a quiet,
+          rounded voice, breathing across three weights. Together they read
+          the way the brand wants to be heard: poised, but never precious.
+        </p>
+      </div>
+    </header>
+
+    <div class="type">
+      <article class="type__display">
+        <div class="type__display-meta">
+          <span class="tag">DM Serif Display В· Regular В· Italic</span>
+          <span class="type__display-spec">Clamp 56вЂ“120px В· 1.02 lh В· -1.5% tracking</span>
+        </div>
+        <p class="type__display-sample">
+          Eat <em>quietly,</em><br />nourish on purpose.
+        </p>
+      </article>
+
+      <div class="type__grid">
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Display 01</span>
+            <span class="type__spec">DM Serif Display В· 72/76 В· -2%</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Serif Display',serif;font-size:clamp(40px,5vw,72px);line-height:1.05;">A morning <em>ritual.</em></p>
+        </article>
+
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Heading 01</span>
+            <span class="type__spec">DM Serif Display В· 44/52</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Serif Display',serif;font-size:clamp(32px,4vw,44px);line-height:1.18;">Slow food, served gently.</p>
+        </article>
+
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Heading 02</span>
+            <span class="type__spec">DM Serif Display В· 32/40</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Serif Display',serif;font-size:clamp(24px,3vw,32px);line-height:1.25;">Your week, in balance</p>
+        </article>
+
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Subhead</span>
+            <span class="type__spec">DM Sans В· 500 В· 20/30</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:20px;line-height:1.5;">A handful of almonds at three, and the day softens.</p>
+        </article>
+
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Body</span>
+            <span class="type__spec">DM Sans В· 400 В· 16/28</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Sans',sans-serif;font-weight:400;font-size:16px;line-height:1.75;">KostnГ¦r listens before it speaks. It asks what your body is telling you today, then offers a small, considered next step вЂ” never a verdict, never a tally.</p>
+        </article>
+
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Body S</span>
+            <span class="type__spec">DM Sans В· 300 В· 14/24</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Sans',sans-serif;font-weight:300;font-size:14px;line-height:1.7;color:var(--birch-dark)">Captions, helper text, second-thoughts. The voice that lives in margins.</p>
+        </article>
+
+        <article class="type__row">
+          <div class="type__row-meta">
+            <span class="type__name">Label В· Caps</span>
+            <span class="type__spec">DM Sans В· 500 В· 12 В· +18% track</span>
+          </div>
+          <p class="type__row-sample" style="font-family:'DM Sans',sans-serif;font-weight:500;font-size:12px;letter-spacing:0.18em;text-transform:uppercase;color:var(--sage-dark)">Daily intake В· Macro balance</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== BUTTONS ===================== -->
+  <section class="section section--buttons" id="buttons">
+    <header class="section__head">
+      <span class="section__index">03</span>
+      <div>
+        <p class="section__kicker">Buttons & Actions</p>
+        <h2 class="section__title">Quiet invitations <em>to act.</em></h2>
+        <p class="section__lede">
+          Buttons in Kostnær never raise their voice. Curves soften, shadows
+          breathe, and hover states drift rather than snap.
+        </p>
+      </div>
+    </header>
+
+    <div class="buttons">
+      <article class="button-card">
+        <div class="button-card__stage">
+          <button class="btn btn--primary" type="button">
+            Log today's meal
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"/><path d="M12 5l7 7-7 7"/></svg>
+          </button>
+        </div>
+        <dl class="button-card__meta">
+          <dt>Primary</dt>
+          <dd>Sage on cream В· 14px label В· 999px radius В· soft shadow lift on hover.</dd>
+        </dl>
+      </article>
+
+      <article class="button-card">
+        <div class="button-card__stage">
+          <button class="btn btn--secondary" type="button">Customize plan</button>
+        </div>
+        <dl class="button-card__meta">
+          <dt>Secondary</dt>
+          <dd>Outlined stone В· subtle wash on hover В· same rhythm, lower volume.</dd>
+        </dl>
+      </article>
+
+      <article class="button-card">
+        <div class="button-card__stage">
+          <button class="btn btn--ghost" type="button">Skip for now</button>
+        </div>
+        <dl class="button-card__meta">
+          <dt>Ghost</dt>
+          <dd>Type-only В· underline draws in on hover. Used for "not now" moments.</dd>
+        </dl>
+      </article>
+
+      <article class="button-card">
+        <div class="button-card__stage">
+          <button class="btn btn--primary" type="button" disabled>Sync paused</button>
+        </div>
+        <dl class="button-card__meta">
+          <dt>Disabled</dt>
+          <dd>Mist surface В· birch-dark label В· no shadow, no motion. Reads as resting.</dd>
+        </dl>
+      </article>
+
+      <article class="button-card button-card--wide">
+        <div class="button-card__stage button-card__stage--row">
+          <button class="btn btn--icon" type="button" aria-label="Add water">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 5 6 9 6 12a6 6 0 0 1-12 0c0-3 2-7 6-12Z"/></svg>
+          </button>
+          <button class="btn btn--icon" type="button" aria-label="Favorite">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+          </button>
+          <button class="btn btn--icon" type="button" aria-label="Share">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="6" cy="12" r="2.5"/><circle cx="18" cy="6" r="2.5"/><circle cx="18" cy="18" r="2.5"/><path d="M8 11l8-4"/><path d="M8 13l8 4"/></svg>
+          </button>
+          <button class="btn btn--icon" type="button" aria-label="Settings">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="3"/><path d="M19 12a7 7 0 0 0-.1-1.2l2-1.5-2-3.4-2.4.9a7 7 0 0 0-2-1.2L14 3h-4l-.5 2.6a7 7 0 0 0-2 1.2l-2.4-.9-2 3.4 2 1.5A7 7 0 0 0 5 12c0 .4 0 .8.1 1.2l-2 1.5 2 3.4 2.4-.9c.6.5 1.3.9 2 1.2L10 21h4l.5-2.6a7 7 0 0 0 2-1.2l2.4.9 2-3.4-2-1.5c.1-.4.1-.8.1-1.2Z"/></svg>
+          </button>
+        </div>
+        <dl class="button-card__meta">
+          <dt>Icon buttons</dt>
+          <dd>44px target В· 1px hairline В· sage tint on hover. Live in toolbars and tab bars.</dd>
+        </dl>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== FORMS ===================== -->
+  <section class="section section--forms" id="forms">
+    <header class="section__head section__head--center">
+      <span class="section__index">04</span>
+      <div>
+        <p class="section__kicker">Form Components</p>
+        <h2 class="section__title">Inputs that <em>listen.</em></h2>
+        <p class="section__lede">
+          Fields rest on frost. Borders are hairline. Focus arrives as a
+          ring, never a flash.
+        </p>
+      </div>
+    </header>
+
+    <div class="forms">
+      <div class="forms__col">
+        <article class="field-card">
+          <p class="field-card__label">Search</p>
+          <div class="field field--search">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+            <input type="text" placeholder="Search recipes, ingredients" />
+            <kbd>Search</kbd>
+          </div>
+        </article>
+
+        <article class="field-card">
+          <p class="field-card__label">Text field</p>
+          <div class="field">
+            <label for="name">Your name</label>
+            <input id="name" type="text" value="Marta Snitynska" />
+          </div>
+        </article>
+
+        <article class="field-card">
+          <p class="field-card__label">Dropdown</p>
+          <div class="field field--select">
+            <label for="goal">Daily goal</label>
+            <div class="select">
+              <span>Maintain 2,100 kcal</span>
+              <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 9l6 6 6-6"/></svg>
+            </div>
+          </div>
+        </article>
+
+        <article class="field-card">
+          <p class="field-card__label">Tags &amp; chips</p>
+          <div class="chips">
+            <span class="chip chip--active">Vegetarian</span>
+            <span class="chip">Mediterranean</span>
+            <span class="chip">Low-carb</span>
+            <span class="chip">High-protein</span>
+            <span class="chip chip--add">+ Add</span>
+          </div>
+        </article>
+      </div>
+
+      <div class="forms__col">
+        <article class="field-card field-card--row">
+          <div>
+            <p class="field-card__label">Toggle</p>
+            <p class="field-card__hint">Gentle reminders</p>
+          </div>
+          <button class="toggle is-on" role="switch" aria-checked="true" aria-label="Toggle reminders">
+            <span class="toggle__thumb"></span>
+          </button>
+        </article>
+
+        <article class="field-card field-card--row">
+          <div>
+            <p class="field-card__label">Checkbox</p>
+            <p class="field-card__hint">Include weekends in plan</p>
+          </div>
+          <label class="checkbox">
+            <input type="checkbox" checked />
+            <span class="checkbox__box">
+              <svg viewBox="0 0 16 16" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3 8.5l3.2 3L13 4"/></svg>
+            </span>
+          </label>
+        </article>
+
+        <article class="field-card">
+          <p class="field-card__label">Progress ring</p>
+          <div class="ring-row">
+            <div class="ring">
+              <svg viewBox="0 0 100 100" width="120" height="120" aria-hidden="true">
+                <circle cx="50" cy="50" r="44" stroke="var(--mist)" stroke-width="8" fill="none" />
+                <circle class="ring__bar" cx="50" cy="50" r="44" stroke="var(--sage)" stroke-width="8" fill="none" stroke-linecap="round" stroke-dasharray="276" stroke-dashoffset="83" transform="rotate(-90 50 50)" />
+              </svg>
+              <div class="ring__center">
+                <span class="ring__value">70<small>%</small></span>
+                <span class="ring__label">of goal</span>
+              </div>
+            </div>
+            <ul class="ring-legend">
+              <li><span class="dot" style="background:var(--sage)"></span> Consumed В· 1,470 kcal</li>
+              <li><span class="dot" style="background:var(--mist)"></span> Remaining В· 630 kcal</li>
+              <li><span class="dot" style="background:var(--birch)"></span> Burned В· 320 kcal</li>
+            </ul>
+          </div>
+        </article>
+
+        <article class="field-card">
+          <p class="field-card__label">Nutrition stat cards</p>
+          <div class="stats">
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-3 3-3 7 0 10 3-3 3-7 0-10Z"/><path d="M12 13v8"/></svg>
+              </span>
+              <span class="stat__val">1,470<small>kcal</small></span>
+              <span class="stat__lab">Calories</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="8"/><path d="M8 12h8"/></svg>
+              </span>
+              <span class="stat__val">86<small>g</small></span>
+              <span class="stat__lab">Protein</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 18c0-6 4-10 8-10s8 4 8 10"/><path d="M4 18h16"/></svg>
+              </span>
+              <span class="stat__val">142<small>g</small></span>
+              <span class="stat__lab">Carbs</span>
+            </div>
+            <div class="stat">
+              <span class="stat__icon" aria-hidden="true">
+                <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 4c-4 4-4 10 0 16 4-6 4-12 0-16Z"/></svg>
+              </span>
+              <span class="stat__val">48<small>g</small></span>
+              <span class="stat__lab">Fats</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MOBILE UI ===================== -->
+  <section class="section section--mobile" id="mobile">
+    <header class="section__head">
+      <span class="section__index">05</span>
+      <div>
+        <p class="section__kicker">Mobile Components</p>
+        <h2 class="section__title">In the hand, <em>at the right moment.</em></h2>
+        <p class="section__lede">
+          A small library of editorial cards that compose into screens.
+          Designed to read at a glance вЂ” most fit comfortably in the upper
+          third of a phone, where the thumb rests.
+        </p>
+      </div>
+    </header>
+
+    <div class="mobile-grid">
+
+      <!-- Calorie tracker -->
+      <article class="m-card m-card--tracker">
+        <header class="m-card__head">
+          <div>
+            <p class="m-card__kicker">Today</p>
+            <h3 class="m-card__title">Daily intake</h3>
+          </div>
+          <span class="m-card__date">Tue В· 19 May</span>
+        </header>
+        <div class="m-card__tracker">
+          <div class="ring ring--lg">
+            <svg viewBox="0 0 100 100" width="170" height="170" aria-hidden="true">
+              <circle cx="50" cy="50" r="44" stroke="var(--mist)" stroke-width="6" fill="none" />
+              <circle cx="50" cy="50" r="44" stroke="var(--sage)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="276" stroke-dashoffset="83" transform="rotate(-90 50 50)" />
+            </svg>
+            <div class="ring__center">
+              <span class="ring__value">1,470</span>
+              <span class="ring__label">of 2,100 kcal</span>
+            </div>
+          </div>
+          <ul class="m-card__macros">
+            <li>
+              <span class="m-card__macro-label">Protein</span>
+              <span class="bar"><span class="bar__fill" style="--w:68%; --c:var(--sage-dark)"></span></span>
+              <span class="m-card__macro-val">86g</span>
+            </li>
+            <li>
+              <span class="m-card__macro-label">Carbs</span>
+              <span class="bar"><span class="bar__fill" style="--w:54%; --c:var(--sage)"></span></span>
+              <span class="m-card__macro-val">142g</span>
+            </li>
+            <li>
+              <span class="m-card__macro-label">Fats</span>
+              <span class="bar"><span class="bar__fill" style="--w:40%; --c:var(--birch-dark)"></span></span>
+              <span class="m-card__macro-val">48g</span>
+            </li>
+          </ul>
+        </div>
+      </article>
+
+      <!-- Recipe -->
+      <article class="m-card m-card--recipe">
+        <div class="m-card__image" aria-hidden="true">
+          <span class="m-card__image-tag">Slow В· 25 min</span>
+          <svg class="m-card__plate" viewBox="0 0 200 200" width="180" height="180" fill="none" aria-hidden="true">
+            <circle cx="100" cy="100" r="80" fill="var(--cream)" />
+            <circle cx="100" cy="100" r="62" fill="var(--mist)" />
+            <path d="M70 95c10-18 30-22 45-12s18 30 5 42-36 8-44-6-12-12-6-24z" fill="var(--sage-light)" />
+            <path d="M88 84c8-4 18-2 22 6" stroke="var(--sage-dark)" stroke-width="1.5" stroke-linecap="round" fill="none" />
+            <circle cx="118" cy="105" r="6" fill="var(--birch)" />
+            <circle cx="92" cy="120" r="4" fill="var(--birch-dark)" />
+            <path d="M40 60c14 4 14 14 0 18" stroke="var(--sage)" stroke-width="2" stroke-linecap="round" fill="none" />
+          </svg>
+        </div>
+        <div class="m-card__body">
+          <p class="m-card__kicker">For you</p>
+          <h3 class="m-card__title">Roasted squash &amp; barley bowl</h3>
+          <p class="m-card__desc">Warm grains, sage-brown butter, a slow squeeze of lemon.</p>
+          <div class="m-card__foot">
+            <span class="badge">412 kcal</span>
+            <span class="badge badge--soft">High fibre</span>
+            <button class="btn btn--small" type="button">Save</button>
+          </div>
+        </div>
+      </article>
+
+      <!-- Daily goal widget -->
+      <article class="m-card m-card--goal">
+        <p class="m-card__kicker">This week</p>
+        <h3 class="m-card__title">Goals, gently</h3>
+        <ul class="goals">
+          <li>
+            <span class="goal__name">Movement</span>
+            <span class="bar bar--lg"><span class="bar__fill" style="--w:82%; --c:var(--sage)"></span></span>
+            <span class="goal__val">5 / 6 days</span>
+          </li>
+          <li>
+            <span class="goal__name">Water</span>
+            <span class="bar bar--lg"><span class="bar__fill" style="--w:64%; --c:var(--sage-light)"></span></span>
+            <span class="goal__val">1.6 / 2.5 L</span>
+          </li>
+          <li>
+            <span class="goal__name">Mindful meals</span>
+            <span class="bar bar--lg"><span class="bar__fill" style="--w:46%; --c:var(--birch-dark)"></span></span>
+            <span class="goal__val">9 / 21</span>
+          </li>
+          <li>
+            <span class="goal__name">Sleep</span>
+            <span class="bar bar--lg"><span class="bar__fill" style="--w:90%; --c:var(--sage-dark)"></span></span>
+            <span class="goal__val">7h 42m avg</span>
+          </li>
+        </ul>
+      </article>
+
+      <!-- Macro tracker -->
+      <article class="m-card m-card--macro">
+        <header class="m-card__head">
+          <div>
+            <p class="m-card__kicker">Macros</p>
+            <h3 class="m-card__title">In balance</h3>
+          </div>
+          <span class="badge badge--ok">On track</span>
+        </header>
+        <div class="macro-bars">
+          <div class="macro">
+            <div class="macro__ring">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="26" stroke="var(--mist)" stroke-width="6" fill="none"/>
+                <circle cx="32" cy="32" r="26" stroke="var(--sage-dark)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="163" stroke-dashoffset="52" transform="rotate(-90 32 32)"/>
+              </svg>
+              <span>68%</span>
+            </div>
+            <span class="macro__name">Protein</span>
+            <span class="macro__val">86 / 125 g</span>
+          </div>
+          <div class="macro">
+            <div class="macro__ring">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="26" stroke="var(--mist)" stroke-width="6" fill="none"/>
+                <circle cx="32" cy="32" r="26" stroke="var(--sage)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="163" stroke-dashoffset="75" transform="rotate(-90 32 32)"/>
+              </svg>
+              <span>54%</span>
+            </div>
+            <span class="macro__name">Carbs</span>
+            <span class="macro__val">142 / 260 g</span>
+          </div>
+          <div class="macro">
+            <div class="macro__ring">
+              <svg viewBox="0 0 64 64" width="64" height="64">
+                <circle cx="32" cy="32" r="26" stroke="var(--mist)" stroke-width="6" fill="none"/>
+                <circle cx="32" cy="32" r="26" stroke="var(--birch-dark)" stroke-width="6" fill="none" stroke-linecap="round" stroke-dasharray="163" stroke-dashoffset="98" transform="rotate(-90 32 32)"/>
+              </svg>
+              <span>40%</span>
+            </div>
+            <span class="macro__name">Fats</span>
+            <span class="macro__val">48 / 70 g</span>
+          </div>
+        </div>
+      </article>
+
+      <!-- Onboarding card -->
+      <article class="m-card m-card--onboarding">
+        <span class="m-card__step">02 / 04</span>
+        <h3 class="m-card__title m-card__title--serif">A pace that <em>suits you.</em></h3>
+        <p class="m-card__desc">Tell us how you'd like to move through your goal. We'll never count for you вЂ” only with you.</p>
+        <div class="onboarding-options">
+          <button class="opt" type="button">
+            <span class="opt__name">Slow &amp; steady</span>
+            <span class="opt__hint">вЂ“ 250 kcal / day</span>
+          </button>
+          <button class="opt is-selected" type="button">
+            <span class="opt__name">Balanced</span>
+            <span class="opt__hint">вЂ“ 500 kcal / day</span>
+          </button>
+          <button class="opt" type="button">
+            <span class="opt__name">Focused</span>
+            <span class="opt__hint">вЂ“ 750 kcal / day</span>
+          </button>
+        </div>
+        <div class="onboarding-foot">
+          <span class="dots" aria-hidden="true">
+            <i></i><i class="is-active"></i><i></i><i></i>
+          </span>
+          <button class="btn btn--primary btn--small" type="button">Continue</button>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===================== ICONOGRAPHY ===================== -->
+  <section class="section section--icons" id="icons">
+    <header class="section__head section__head--center">
+      <span class="section__index">06</span>
+      <div>
+        <p class="section__kicker">Iconography</p>
+        <h2 class="section__title">A grammar of <em>small marks.</em></h2>
+        <p class="section__lede">
+          Soft, line-only icons drawn on a 24px grid. 1.5px stroke, rounded
+          caps, generous interior space вЂ” never literal, always quiet.
+        </p>
+      </div>
+    </header>
+
+    <div class="icons">
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-4 5-4 11 0 18 4-7 4-13 0-18Z"/><path d="M12 11c2-2 5-2 7-1"/></svg>
+        <figcaption>Leaf</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 7c-3-3-8-1-8 4 0 7 8 10 8 10s8-3 8-10c0-5-5-7-8-4Z"/><path d="M12 5v2"/><path d="M14 4l-2 2"/></svg>
+        <figcaption>Apple</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c4 5 6 9 6 12a6 6 0 0 1-12 0c0-3 2-7 6-12Z"/></svg>
+        <figcaption>Water</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 11h16a8 8 0 0 1-16 0Z"/><path d="M3 11h18"/><path d="M9 7c0-2 2-2 2-4"/><path d="M13 7c0-2 2-2 2-4"/></svg>
+        <figcaption>Bowl</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c2 4 5 6 5 11a5 5 0 0 1-10 0c0-3 2-4 3-6 1 2 2 3 2 5"/></svg>
+        <figcaption>Flame</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.5-9.5-9A5.5 5.5 0 0 1 12 6a5.5 5.5 0 0 1 9.5 6c-2.5 4.5-9.5 9-9.5 9Z"/></svg>
+        <figcaption>Heart</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l1.8 4.5L18 9l-3.6 3 1.1 4.7L12 14.7 8.5 16.7 9.6 12 6 9l4.2-1.5L12 3Z"/></svg>
+        <figcaption>Star</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 3v2"/><path d="M12 19v2"/><path d="M3 12h2"/><path d="M19 12h2"/><path d="M5.5 5.5l1.5 1.5"/><path d="M17 17l1.5 1.5"/><path d="M5.5 18.5L7 17"/><path d="M17 7l1.5-1.5"/></svg>
+        <figcaption>Sun</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-7"/><path d="M12 14c-4 0-6-3-6-7 4 0 6 3 6 7Z"/><path d="M12 14c4 0 6-3 6-7-4 0-6 3-6 7Z"/></svg>
+        <figcaption>Sprout</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="4" y="6" width="16" height="12" rx="2"/><path d="M8 6V4h8v2"/><path d="M9 12h6"/></svg>
+        <figcaption>Plan</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+        <figcaption>Timer</figcaption>
+      </figure>
+      <figure class="icon-tile">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M6 10c0-2 2-4 6-4s6 2 6 4-2 4-6 4-6-2-6-4Z"/><path d="M6 11v4c0 2 2 4 6 4s6-2 6-4v-4"/></svg>
+        <figcaption>Mug</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===================== SPACING / GRID ===================== -->
+  <section class="section section--spacing" id="spacing">
+    <header class="section__head">
+      <span class="section__index">07</span>
+      <div>
+        <p class="section__kicker">Spacing &amp; Grid</p>
+        <h2 class="section__title">Air, on a <em>4pt grid.</em></h2>
+        <p class="section__lede">
+          Everything in KostnГ¦r aligns to a 4-point rhythm. Margins are
+          generous; radii are gentle; shadows whisper. The system breathes.
+        </p>
+      </div>
+    </header>
+
+    <div class="specs">
+      <article class="spec spec--scale">
+        <h3 class="spec__title">Scale</h3>
+        <ul class="scale">
+          <li><span class="scale__bar" style="--w:4px"></span><span class="scale__name">04</span><span class="scale__val">4px</span></li>
+          <li><span class="scale__bar" style="--w:8px"></span><span class="scale__name">08</span><span class="scale__val">8px</span></li>
+          <li><span class="scale__bar" style="--w:12px"></span><span class="scale__name">12</span><span class="scale__val">12px</span></li>
+          <li><span class="scale__bar" style="--w:16px"></span><span class="scale__name">16</span><span class="scale__val">16px</span></li>
+          <li><span class="scale__bar" style="--w:24px"></span><span class="scale__name">24</span><span class="scale__val">24px</span></li>
+          <li><span class="scale__bar" style="--w:32px"></span><span class="scale__name">32</span><span class="scale__val">32px</span></li>
+          <li><span class="scale__bar" style="--w:48px"></span><span class="scale__name">48</span><span class="scale__val">48px</span></li>
+          <li><span class="scale__bar" style="--w:64px"></span><span class="scale__name">64</span><span class="scale__val">64px</span></li>
+          <li><span class="scale__bar" style="--w:96px"></span><span class="scale__name">96</span><span class="scale__val">96px</span></li>
+          <li><span class="scale__bar" style="--w:128px"></span><span class="scale__name">128</span><span class="scale__val">128px</span></li>
+        </ul>
+      </article>
+
+      <article class="spec spec--radii">
+        <h3 class="spec__title">Radius</h3>
+        <div class="radii">
+          <div class="radius"><span class="radius__box" style="border-radius:4px"></span><span>4 В· sharp</span></div>
+          <div class="radius"><span class="radius__box" style="border-radius:12px"></span><span>12 В· soft</span></div>
+          <div class="radius"><span class="radius__box" style="border-radius:20px"></span><span>20 В· card</span></div>
+          <div class="radius"><span class="radius__box" style="border-radius:32px"></span><span>32 В· sheet</span></div>
+          <div class="radius"><span class="radius__box" style="border-radius:999px"></span><span>full В· pill</span></div>
+        </div>
+      </article>
+
+      <article class="spec spec--shadows">
+        <h3 class="spec__title">Shadow</h3>
+        <div class="shadows">
+          <div class="shadow shadow--0"><span>Rest</span></div>
+          <div class="shadow shadow--1"><span>Card</span></div>
+          <div class="shadow shadow--2"><span>Lift</span></div>
+          <div class="shadow shadow--3"><span>Sheet</span></div>
+        </div>
+      </article>
+
+      <article class="spec spec--grid">
+        <h3 class="spec__title">Grid</h3>
+        <p class="spec__note">12 columns В· 80px max gutter В· 24px on mobile В· 5% side margins.</p>
+        <div class="grid-vis">
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+          <span></span><span></span><span></span><span></span><span></span><span></span>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== MOTION ===================== -->
+  <section class="section section--motion" id="motion">
+    <header class="section__head section__head--center">
+      <span class="section__index">08</span>
+      <div>
+        <p class="section__kicker">Motion Principles</p>
+        <h2 class="section__title">Movement, as <em>breath.</em></h2>
+        <p class="section__lede">
+          Animation in KostnГ¦r is exhale-paced. Things drift in; nothing
+          snaps. The default curve is a slow, organic ease.
+        </p>
+      </div>
+    </header>
+
+    <div class="motion">
+      <article class="motion__card">
+        <div class="motion__demo motion__demo--fade"></div>
+        <h3>Soft fades</h3>
+        <p>400вЂ“600ms opacity transitions with a gentle translate. Used for surface entry, modals, page sections.</p>
+        <span class="motion__spec">cubic-bezier(.22,.61,.36,1) В· 500ms</span>
+      </article>
+      <article class="motion__card">
+        <div class="motion__demo motion__demo--drift"></div>
+        <h3>Organic drift</h3>
+        <p>Decorative shapes breathe with a long, looping float вЂ” never repeating exactly, never hurried.</p>
+        <span class="motion__spec">ease-in-out В· 9вЂ“14s loop</span>
+      </article>
+      <article class="motion__card">
+        <div class="motion__demo motion__demo--ring"></div>
+        <h3>Ring fills</h3>
+        <p>Progress arcs draw on entry, then settle. The eye reads completion without being celebrated at.</p>
+        <span class="motion__spec">ease-out В· 900ms</span>
+      </article>
+      <article class="motion__card">
+        <div class="motion__demo motion__demo--hover"></div>
+        <h3>Hover lifts</h3>
+        <p>Cards and buttons lift 2вЂ“4px on hover, shadow softens upward. Pointer leaves; everything returns home.</p>
+        <span class="motion__spec">ease-out В· 220ms</span>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== BRAND VOICE ===================== -->
+  <section class="section section--voice" id="voice">
+    <header class="section__head">
+      <span class="section__index">09</span>
+      <div>
+        <p class="section__kicker">Brand Voice</p>
+        <h2 class="section__title">How KostnГ¦r <em>speaks.</em></h2>
+        <p class="section__lede">
+          Five qualities, held together. The voice is a friend who has read
+          the science and decided not to lecture about it.
+        </p>
+      </div>
+    </header>
+
+    <div class="voice">
+      <article class="voice__card">
+        <span class="voice__num">i.</span>
+        <h3>Calm</h3>
+        <p>Speak in full breaths. No urgent verbs, no exclamation marks. Pauses are content.</p>
+        <p class="voice__quote">"A small lunch today is enough."</p>
+      </article>
+      <article class="voice__card">
+        <span class="voice__num">ii.</span>
+        <h3>Intentional</h3>
+        <p>Every word earns its place. We name the action and the reason; we never decorate.</p>
+        <p class="voice__quote">"Add water вЂ” you're a glass behind yesterday."</p>
+      </article>
+      <article class="voice__card">
+        <span class="voice__num">iii.</span>
+        <h3>Warm</h3>
+        <p>The voice of a kitchen, not a clinic. Soft nouns: bowl, morning, handful, season.</p>
+        <p class="voice__quote">"Slow oats, a spoon of honey."</p>
+      </article>
+      <article class="voice__card">
+        <span class="voice__num">iv.</span>
+        <h3>Non-judgmental</h3>
+        <p>No "should". No red. Missed days are reported as facts, not failures.</p>
+        <p class="voice__quote">"Yesterday was lighter than your usual. Today, as you like."</p>
+      </article>
+      <article class="voice__card">
+        <span class="voice__num">v.</span>
+        <h3>Encouraging</h3>
+        <p>Praise the rhythm, not the result. Streaks are described in seasons, not numbers.</p>
+        <p class="voice__quote">"A quiet week of cooking at home вЂ” well done you."</p>
+      </article>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="34" height="34" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4c-5 6-5 12 0 18 5-6 5-12 0-18Z" />
+            <path d="M16 22v6" />
+          </svg>
+        </span>
+        <h2 class="footer__title">KostnГ¦r</h2>
+        <p class="footer__tagline"><em>Nourish</em> with intention.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../1_branding/1_branding.html">Branding</a></li>
+          <li><a href="./2_design_system.html">Design System</a></li>
+          <li><a href="../3_screens/3_screens.html">Key Screens</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__meta">
+        <p>Designed by Marta Snitynska</p>
+        <p>В© 2026 KostnГ¦r Studio В· Made in soft light.</p>
+      </div>
+    </div>
+    <div class="footer__rule" aria-hidden="true"></div>
+    <p class="footer__big" aria-hidden="true">KostnГ¦r <em>В·</em> 2026</p>
+  </footer>
+
+</body>
+</html>

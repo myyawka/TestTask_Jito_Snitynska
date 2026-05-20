@@ -1,0 +1,336 @@
+/* =====================================================
+   Kostnær · Home (JITO Test Task)
+   Minimal Scandinavian Wellness
+   ===================================================== */
+
+:root {
+  --cream: #F5F0E8;
+  --sage: #8FA882;
+  --sage-light: #C5D4BF;
+  --sage-dark: #4A6B3E;
+  --birch: #D4C5A9;
+  --birch-dark: #A89270;
+  --stone: #2C2C28;
+  --mist: #E8EDE6;
+  --white: #FAFAF7;
+  --frost: #EEF2EE;
+
+  --serif: "DM Serif Display", "Times New Roman", serif;
+  --sans:  "DM Sans", -apple-system, BlinkMacSystemFont, "Helvetica Neue", sans-serif;
+
+  --ease: cubic-bezier(.22,.61,.36,1);
+
+  --sh-1: 0 8px 24px -12px rgba(44,44,40,.10), 0 2px 6px rgba(44,44,40,.04);
+  --sh-2: 0 28px 60px -28px rgba(44,44,40,.18), 0 6px 18px rgba(44,44,40,.05);
+
+  --pad-x: clamp(20px, 5vw, 88px);
+}
+
+/* Reset */
+*, *::before, *::after { box-sizing: border-box; }
+html { -webkit-text-size-adjust: 100%; }
+body {
+  margin: 0;
+  font-family: var(--sans);
+  font-weight: 400;
+  color: var(--stone);
+  background: var(--cream);
+  line-height: 1.6;
+  letter-spacing: -0.005em;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+a { color: inherit; text-decoration: none; }
+em { font-style: italic; }
+::selection { background: var(--sage-light); color: var(--sage-dark); }
+
+/* =====================================================
+   HERO (the whole page)
+   ===================================================== */
+.hero {
+  position: relative;
+  min-height: 100vh;
+  padding: clamp(24px, 4vw, 48px) var(--pad-x);
+  display: flex;
+  flex-direction: column;
+  background:
+    radial-gradient(120% 80% at 90% -10%, rgba(212,197,169,.50), transparent 60%),
+    radial-gradient(80% 60% at -10% 110%, rgba(197,212,191,.45), transparent 60%),
+    linear-gradient(180deg, var(--cream), var(--white));
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.hero__grain {
+  position: absolute; inset: 0;
+  pointer-events: none;
+  opacity: .35;
+  mix-blend-mode: multiply;
+  background-image:
+    radial-gradient(rgba(44,44,40,.045) 1px, transparent 1px),
+    radial-gradient(rgba(44,44,40,.03) 1px, transparent 1px);
+  background-size: 3px 3px, 7px 7px;
+  background-position: 0 0, 1px 1px;
+}
+
+/* Decorative shapes */
+.shape {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+.shape--leaf {
+  width: 380px; height: 380px;
+  right: -100px; top: 8%;
+  background: var(--sage-light);
+  border-radius: 70% 30% 60% 40% / 40% 60% 40% 60%;
+  filter: blur(2px);
+  opacity: .55;
+  animation: float 14s ease-in-out infinite;
+}
+.shape--ring {
+  width: 280px; height: 280px;
+  left: -80px; bottom: 10%;
+  border: 1px solid rgba(74,107,62,.18);
+  border-radius: 50%;
+  animation: float 18s ease-in-out infinite reverse;
+}
+.shape--ring::after {
+  content: "";
+  position: absolute; inset: 28px;
+  border-radius: 50%;
+  border: 1px dashed rgba(74,107,62,.14);
+}
+.shape--blob {
+  width: 220px; height: 220px;
+  right: 14%; bottom: 8%;
+  background: var(--birch);
+  border-radius: 60% 40% 50% 50% / 50% 60% 40% 50%;
+  opacity: .30;
+  filter: blur(10px);
+  animation: float 22s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0) rotate(0); }
+  50%      { transform: translateY(-22px) rotate(2deg); }
+}
+
+/* =====================================================
+   Top meta strip
+   ===================================================== */
+.topmeta {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11px;
+  letter-spacing: .26em;
+  text-transform: uppercase;
+  color: var(--birch-dark);
+}
+.topmeta__left,
+.topmeta__right { font-family: var(--sans); }
+
+/* =====================================================
+   Inner content
+   ===================================================== */
+.hero__inner {
+  position: relative;
+  z-index: 3;
+  margin: auto;
+  padding: clamp(48px, 8vw, 80px) 0;
+  max-width: 880px;
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Eyebrow */
+.eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  letter-spacing: .22em;
+  text-transform: uppercase;
+  color: var(--sage-dark);
+  font-weight: 500;
+  padding: 8px 16px;
+  border: 1px solid rgba(74,107,62,.18);
+  background: rgba(250,250,247,.55);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  border-radius: 999px;
+}
+.eyebrow em {
+  font-family: var(--serif);
+  font-style: italic;
+  text-transform: none;
+  letter-spacing: 0;
+  font-weight: 400;
+  font-size: 14px;
+  color: var(--stone);
+  margin-left: 2px;
+}
+.eyebrow__dot {
+  width: 6px; height: 6px;
+  border-radius: 50%;
+  background: var(--sage);
+  box-shadow: 0 0 0 4px rgba(143,168,130,.18);
+}
+
+/* Title */
+.hero__title {
+  font-family: var(--serif);
+  font-weight: 400;
+  font-size: clamp(56px, 10vw, 132px);
+  line-height: 0.98;
+  letter-spacing: -0.025em;
+  margin: 32px 0 28px;
+  color: var(--stone);
+}
+.hero__title em {
+  color: var(--sage-dark);
+  font-style: italic;
+  font-size: 0.6em;
+  display: inline-block;
+  margin-top: 12px;
+  letter-spacing: -0.015em;
+}
+.hero__title .dot { color: var(--sage); }
+
+.hero__lead {
+  font-size: clamp(16px, 1.4vw, 18px);
+  line-height: 1.7;
+  color: rgba(44,44,40,.72);
+  max-width: 520px;
+  margin: 0 0 56px;
+}
+
+/* =====================================================
+   Chapter links (3 buttons)
+   ===================================================== */
+.chapters {
+  width: 100%;
+  max-width: 720px;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-bottom: 64px;
+}
+.chapter {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 24px;
+  padding: 22px 28px;
+  background: rgba(250,250,247,.7);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid rgba(44,44,40,.08);
+  border-radius: 999px;
+  box-shadow: var(--sh-1);
+  transition: transform .4s var(--ease),
+              background .4s var(--ease),
+              border-color .4s var(--ease),
+              box-shadow .4s var(--ease),
+              color .4s var(--ease);
+  text-align: left;
+}
+.chapter:hover {
+  transform: translateY(-3px);
+  background: var(--stone);
+  color: var(--white);
+  border-color: var(--stone);
+  box-shadow: var(--sh-2);
+}
+
+.chapter__index {
+  font-family: var(--serif);
+  font-style: italic;
+  font-size: 22px;
+  color: var(--sage-dark);
+  min-width: 36px;
+  transition: color .4s var(--ease);
+}
+.chapter:hover .chapter__index { color: var(--sage-light); }
+
+.chapter__title {
+  flex: 1;
+  font-family: var(--serif);
+  font-size: clamp(22px, 2.4vw, 28px);
+  letter-spacing: -0.01em;
+  line-height: 1;
+}
+
+.chapter__arrow {
+  width: 44px; height: 44px;
+  border-radius: 50%;
+  background: var(--mist);
+  color: var(--sage-dark);
+  display: grid; place-items: center;
+  transition: background .4s var(--ease), color .4s var(--ease);
+}
+.chapter__arrow svg { transition: transform .4s var(--ease); }
+.chapter:hover .chapter__arrow {
+  background: var(--sage-light);
+  color: var(--sage-dark);
+}
+.chapter:hover .chapter__arrow svg { transform: translateX(3px); }
+
+/* =====================================================
+   Sign-off (small about me line)
+   ===================================================== */
+.signoff {
+  position: relative;
+  z-index: 3;
+  margin-top: auto;
+  padding-top: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.signoff__rule {
+  width: 40px;
+  height: 1px;
+  background: rgba(44,44,40,.2);
+}
+.signoff__text {
+  margin: 0;
+  font-size: 13px;
+  letter-spacing: .04em;
+  color: rgba(44,44,40,.6);
+}
+.signoff__text em {
+  font-family: var(--serif);
+  font-style: italic;
+  color: var(--stone);
+  font-size: 15px;
+}
+
+/* =====================================================
+   Responsive
+   ===================================================== */
+@media (max-width: 720px) {
+  .topmeta { font-size: 10px; }
+  .hero__title { font-size: clamp(48px, 13vw, 80px); }
+  .chapter { padding: 18px 22px; gap: 16px; }
+  .chapter__title { font-size: 19px; }
+  .chapter__arrow { width: 38px; height: 38px; }
+  .eyebrow em { display: inline; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
