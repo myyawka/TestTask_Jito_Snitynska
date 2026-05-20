@@ -1,23 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Kostnær — Screens</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="3_screens.css">
-  <link rel="stylesheet" href="../navigation.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kostnær — Key Screens</title>
+  <meta name="description" content="The Kostnær app in motion — onboarding, daily tracking, AI scanning and recipe discovery. A calm Nordic calorie calculator." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="preconnect" href="https://images.unsplash.com" />
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="3_screens.css" />
 </head>
 <body>
+
   <!-- ===================== HERO ===================== -->
   <header class="hero">
     <div class="hero__grain" aria-hidden="true"></div>
     <span class="shape shape--leaf" aria-hidden="true"></span>
     <span class="shape shape--ring" aria-hidden="true"></span>
     <span class="shape shape--blob" aria-hidden="true"></span>
-    <span class="shape shape--seed" aria-hidden="true"></span>
 
     <nav class="topbar" aria-label="Primary">
       <a class="topbar__brand" href="../index.html">
@@ -35,8 +36,873 @@
         <li><a href="../2_design_system/2_design_system.html">System</a></li>
         <li><a href="./3_screens.html" aria-current="page">Screens</a></li>
       </ul>
-      <span class="topbar__meta">Vol. 02 · Spring 2026</span>
+      <span class="topbar__meta">Chapter III · 2026</span>
     </nav>
+
+    <div class="hero__inner">
+      <div class="hero__copy">
+        <span class="eyebrow">
+          <span class="eyebrow__dot" aria-hidden="true"></span>
+          Chapter III — Key Screens
+        </span>
+        <h1 class="hero__title">
+          Quiet screens, <br /><em>nourishing</em> rituals.
+        </h1>
+        <p class="hero__lede">
+          Eight screens that show Kostnær the way a user lives with it —
+          from a soft welcome, through daily tracking and AI scanning, to
+          finding a recipe worth cooking tonight.
+        </p>
+        <div class="hero__actions">
+          <a class="btn btn--primary" href="#story-1">
+            Explore the flow
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M5 12h14" />
+              <path d="M13 6l6 6-6 6" />
+            </svg>
+          </a>
+          <a class="btn btn--ghost" href="../2_design_system/2_design_system.html">See the system</a>
+        </div>
+      </div>
+
+      <aside class="hero__card" aria-label="Chapter summary">
+        <div class="hero__card-row">
+          <span class="hero__card-key">Screens</span>
+          <span class="hero__card-val">08</span>
+        </div>
+        <div class="hero__card-row">
+          <span class="hero__card-key">Flows</span>
+          <span class="hero__card-val">02</span>
+        </div>
+        <div class="hero__card-row">
+          <span class="hero__card-key">Device</span>
+          <span class="hero__card-val">iOS · 393×852</span>
+        </div>
+        <div class="hero__card-row">
+          <span class="hero__card-key">Mood</span>
+          <span class="hero__card-val">Quiet</span>
+        </div>
+      </aside>
+    </div>
   </header>
+
+
+  <!-- ===================== USER STORIES ===================== -->
+  <section class="stories" aria-label="User stories covered">
+    <header class="stories__head">
+      <span class="section-label">The brief</span>
+      <h2 class="section-title">
+        Two user stories<br /><em>guided every screen.</em>
+      </h2>
+    </header>
+
+    <div class="stories__grid">
+      <article class="story" id="story-1">
+        <span class="story__num">01</span>
+        <p class="story__quote">
+          “As a user, I want to <em>calculate the amount of calories</em>
+          in a dish or a specific product.”
+        </p>
+        <p class="story__answer">
+          Answered by <strong>Search</strong>, <strong>Food Details</strong>
+          and <strong>AI Scan</strong>.
+        </p>
+      </article>
+
+      <article class="story" id="story-2">
+        <span class="story__num">02</span>
+        <p class="story__quote">
+          “As a user, I want to <em>find a recipe</em> for a dish that is
+          suitable for me.”
+        </p>
+        <p class="story__answer">
+          Answered by <strong>Discovery</strong>,
+          <strong>Recipe&nbsp;Details</strong> and
+          <strong>Saved&nbsp;Recipes</strong>.
+        </p>
+      </article>
+    </div>
+  </section>
+
+
+  <!-- ===================== GROUP 1 — FIRST TOUCH ===================== -->
+  <section class="group group--first">
+    <header class="group__head">
+      <div>
+        <span class="section-label">First touch</span>
+        <h2 class="section-title">A welcome, <em>and a glance.</em></h2>
+      </div>
+      <p class="group__lede">
+        Two screens to set the tone. The app opens not with a demand for
+        data, but with a sentence. The home screen, once you arrive, holds
+        a single calm idea: where are you today, and what's next.
+      </p>
+    </header>
+
+    <div class="phones phones--two" role="list">
+
+      <!-- ============ PHONE 01 — ONBOARDING ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen onb">
+            <div class="phone__statusbar">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="onb__art">
+              <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=520&q=80"
+                   alt="" loading="lazy" />
+              <span class="onb__art-ring" aria-hidden="true"></span>
+              <span class="onb__art-dot" aria-hidden="true"></span>
+            </div>
+
+            <div class="onb__body">
+              <p class="onb__kicker">Welcome to</p>
+              <h3 class="onb__title">Kostnær<span class="onb__dot-acc">.</span></h3>
+              <p class="onb__lede">
+                Nourish with intention. A calm place to track what you eat —
+                no streaks, no shaming.
+              </p>
+              <div class="onb__dots" aria-hidden="true">
+                <i class="is-active"></i><i></i><i></i>
+              </div>
+              <button type="button" class="phone-btn phone-btn--primary phone-btn--full">
+                Start tracking
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>
+                </svg>
+              </button>
+              <p class="onb__signin">Already with us? <a href="#">Sign in</a></p>
+            </div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">01</span>
+          <div>
+            <h3>Onboarding</h3>
+            <p>A soft entry — one sentence, one button. No pop-ups, no urgency.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- ============ PHONE 02 — HOME ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen home">
+            <div class="phone__statusbar">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="home__scroll">
+              <div class="home__head">
+                <div>
+                  <p class="home__greet">Wed · 20 May</p>
+                  <h3 class="home__name">Morning, <em>Marta</em></h3>
+                </div>
+                <span class="home__avatar" aria-hidden="true">M</span>
+              </div>
+
+              <div class="home__ring-card">
+                <div class="ring-wrap">
+                  <svg viewBox="0 0 120 120" width="100" height="100" aria-hidden="true">
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#E8EDE6" stroke-width="9"/>
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#4A6B3E" stroke-width="9"
+                            stroke-dasharray="326.7" stroke-dashoffset="124" stroke-linecap="round"
+                            transform="rotate(-90 60 60)"/>
+                  </svg>
+                  <div class="ring-wrap__center">
+                    <span class="ring-wrap__value">1,247</span>
+                    <span class="ring-wrap__unit">/ 2,000 kcal</span>
+                  </div>
+                </div>
+                <ul class="home__macros">
+                  <li><span class="dot dot--sage"></span><div><strong>84 g</strong><small>Protein</small></div></li>
+                  <li><span class="dot dot--birch"></span><div><strong>142 g</strong><small>Carbs</small></div></li>
+                  <li><span class="dot dot--stone"></span><div><strong>38 g</strong><small>Fats</small></div></li>
+                </ul>
+              </div>
+
+              <div class="home__water">
+                <div class="home__water-head">
+                  <span>Water</span>
+                  <span class="home__water-val"><strong>5</strong> / 8</span>
+                </div>
+                <div class="home__water-row" aria-hidden="true">
+                  <i class="is-filled"></i><i class="is-filled"></i><i class="is-filled"></i>
+                  <i class="is-filled"></i><i class="is-filled"></i><i></i><i></i><i></i>
+                </div>
+              </div>
+
+              <div class="home__meals">
+                <div class="home__meals-head">
+                  <h4>Today</h4>
+                  <a class="link-small">See all</a>
+                </div>
+                <ul>
+                  <li>
+                    <span class="meal-thumb">
+                      <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=160&q=80" alt="" loading="lazy" />
+                    </span>
+                    <div class="meal-info">
+                      <strong>Oatmeal &amp; berries</strong>
+                      <small>Breakfast · 08:20</small>
+                    </div>
+                    <span class="meal-kcal">340</span>
+                  </li>
+                  <li>
+                    <span class="meal-thumb">
+                      <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=160&q=80" alt="" loading="lazy" />
+                    </span>
+                    <div class="meal-info">
+                      <strong>Skyr &amp; almonds</strong>
+                      <small>Snack · 11:00</small>
+                    </div>
+                    <span class="meal-kcal">210</span>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <nav class="phone__nav" aria-label="App">
+              <a aria-current="page"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l9-8 9 8"/><path d="M5 10v10h14V10"/></svg></a>
+              <a><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg></a>
+              <a class="nav-cta" aria-label="Scan"><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h3"/><path d="M20 7V4h-3"/><path d="M4 17v3h3"/><path d="M20 17v3h-3"/><circle cx="12" cy="12" r="4"/></svg></a>
+              <a><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19V5l8 4 8-4v14"/></svg></a>
+              <a><svg viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="4"/><path d="M4 21c0-4 4-7 8-7s8 3 8 7"/></svg></a>
+            </nav>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">02</span>
+          <div>
+            <h3>Home Dashboard</h3>
+            <p>One ring, three macros, one glance at the day. Nothing more.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== GROUP 2 — CALORIE FLOW ===================== -->
+  <section class="group group--calorie">
+    <header class="group__head">
+      <div>
+        <span class="section-label">Flow · User Story 01</span>
+        <h2 class="section-title">Calculate calories <em>for any dish.</em></h2>
+      </div>
+      <p class="group__lede">
+        Three honest paths to the same answer. Search the database when you
+        know what you ate. Open Details to choose your portion. Or point
+        the camera at the plate and let on-device AI guess for you.
+      </p>
+    </header>
+
+    <div class="phones phones--three" role="list">
+
+      <!-- ============ PHONE 03 — SEARCH ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen search">
+            <div class="phone__statusbar">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="search__head">
+              <button class="icon-btn" aria-label="Back">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/></svg>
+              </button>
+              <h3>Add a meal</h3>
+              <button class="icon-btn" aria-label="Scan">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 7V4h3"/><path d="M20 7V4h-3"/><path d="M4 17v3h3"/><path d="M20 17v3h-3"/><circle cx="12" cy="12" r="3"/></svg>
+              </button>
+            </div>
+
+            <div class="search__bar">
+              <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3"/></svg>
+              <span class="search__bar-input">Avocado<span class="caret" aria-hidden="true"></span></span>
+            </div>
+
+            <div class="search__recent">
+              <p class="phone-kicker">Recent</p>
+              <div class="phone-chips">
+                <span class="phone-chip">Oatmeal</span>
+                <span class="phone-chip">Eggs</span>
+                <span class="phone-chip">Salmon</span>
+              </div>
+            </div>
+
+            <div class="search__list">
+              <div class="search__list-head">
+                <p class="phone-kicker">Suggested</p>
+                <span class="search__count">4 items</span>
+              </div>
+              <ul>
+                <li class="food food--highlight">
+                  <span class="food__thumb">
+                    <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=140&q=80" alt="" loading="lazy" />
+                  </span>
+                  <div class="food__body">
+                    <strong>Avocado toast</strong>
+                    <small>1 slice · sourdough</small>
+                  </div>
+                  <div class="food__kcal"><strong>290</strong><small>kcal</small></div>
+                </li>
+                <li class="food">
+                  <span class="food__thumb">
+                    <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=140&q=80" alt="" loading="lazy" />
+                  </span>
+                  <div class="food__body">
+                    <strong>Oatmeal bowl</strong>
+                    <small>1 cup · honey</small>
+                  </div>
+                  <div class="food__kcal"><strong>340</strong><small>kcal</small></div>
+                </li>
+                <li class="food">
+                  <span class="food__thumb">
+                    <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=140&q=80" alt="" loading="lazy" />
+                  </span>
+                  <div class="food__body">
+                    <strong>Salmon bowl</strong>
+                    <small>1 serv · quinoa</small>
+                  </div>
+                  <div class="food__kcal"><strong>480</strong><small>kcal</small></div>
+                </li>
+                <li class="food">
+                  <span class="food__thumb">
+                    <img src="https://images.unsplash.com/photo-1505253758473-96b7015fcd40?auto=format&fit=crop&w=140&q=80" alt="" loading="lazy" />
+                  </span>
+                  <div class="food__body">
+                    <strong>Greek yogurt</strong>
+                    <small>200 g · 0% fat</small>
+                  </div>
+                  <div class="food__kcal"><strong>180</strong><small>kcal</small></div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">03</span>
+          <div>
+            <h3>Food Search</h3>
+            <p>Familiar foods first. The barcode lives quietly in the corner.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- ============ PHONE 04 — DETAILS ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen details">
+            <div class="phone__statusbar phone__statusbar--light">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="details__hero">
+              <img src="https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=600&q=80" alt="Avocado toast" loading="lazy" />
+              <button class="icon-btn icon-btn--ghost details__back" aria-label="Back">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/></svg>
+              </button>
+              <button class="icon-btn icon-btn--ghost details__fav" aria-label="Save">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1 7.8 7.8 7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+              </button>
+            </div>
+
+            <div class="details__body">
+              <p class="phone-kicker">Breakfast · 1 slice (120 g)</p>
+              <h3 class="details__title">Avocado toast<span class="dot-acc">.</span></h3>
+
+              <div class="details__row">
+                <div class="ring-wrap ring-wrap--md">
+                  <svg viewBox="0 0 120 120" width="86" height="86" aria-hidden="true">
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#E8EDE6" stroke-width="9"/>
+                    <circle cx="60" cy="60" r="52" fill="none" stroke="#4A6B3E" stroke-width="9"
+                            stroke-dasharray="326.7" stroke-dashoffset="276" stroke-linecap="round"
+                            transform="rotate(-90 60 60)"/>
+                  </svg>
+                  <div class="ring-wrap__center">
+                    <span class="ring-wrap__value">290</span>
+                    <span class="ring-wrap__unit">kcal</span>
+                  </div>
+                </div>
+                <ul class="macro-bars">
+                  <li>
+                    <div class="mb__row"><span>Protein</span><strong>9 g</strong></div>
+                    <span class="mb__bar"><i style="width:30%;background:#8FA882"></i></span>
+                  </li>
+                  <li>
+                    <div class="mb__row"><span>Carbs</span><strong>28 g</strong></div>
+                    <span class="mb__bar"><i style="width:65%;background:#D4C5A9"></i></span>
+                  </li>
+                  <li>
+                    <div class="mb__row"><span>Fats</span><strong>18 g</strong></div>
+                    <span class="mb__bar"><i style="width:55%;background:#A89270"></i></span>
+                  </li>
+                </ul>
+              </div>
+
+              <div class="portion">
+                <div class="portion__control">
+                  <button aria-label="Decrease">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14"/></svg>
+                  </button>
+                  <div class="portion__value">
+                    <strong>1</strong>
+                    <small>slice</small>
+                  </div>
+                  <button aria-label="Increase">
+                    <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 5v14"/><path d="M5 12h14"/></svg>
+                  </button>
+                </div>
+              </div>
+
+              <button class="phone-btn phone-btn--primary phone-btn--full">
+                Add to diary
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                  <path d="M5 12h14"/><path d="M13 6l6 6-6 6"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">04</span>
+          <div>
+            <h3>Food Details</h3>
+            <p>The calorie math made visible — ring, bars, portion, impact.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- ============ PHONE 05 — AI SCAN ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen scan">
+            <div class="phone__statusbar phone__statusbar--light">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="scan__viewfinder">
+              <img class="scan__preview" src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Camera preview" loading="lazy" />
+              <div class="scan__overlay" aria-hidden="true">
+                <button class="icon-btn icon-btn--ghost scan__close" aria-label="Close">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M6 6l12 12"/><path d="M18 6L6 18"/></svg>
+                </button>
+                <span class="scan__flash">
+                  <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M13 2L4 14h7l-2 8 9-12h-7z"/></svg>
+                </span>
+                <div class="scan__frame">
+                  <span></span><span></span><span></span><span></span>
+                  <div class="scan__line"></div>
+                </div>
+                <p class="scan__hint">Hold steady — analysing your plate</p>
+              </div>
+            </div>
+
+            <div class="scan__sheet">
+              <span class="scan__handle" aria-hidden="true"></span>
+              <div class="scan__detected">
+                <div class="scan__detected-row">
+                  <span class="scan__ai">
+                    <svg viewBox="0 0 24 24" width="11" height="11" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 5.4L20 9l-4.4 3.6L17 18l-5-3-5 3 1.4-5.4L4 9l5.6-1.6z"/></svg>
+                    AI · 94% sure
+                  </span>
+                  <span class="scan__edit">Edit</span>
+                </div>
+                <h4>Nordic Salmon Bowl</h4>
+                <p class="scan__sub">Salmon, quinoa, avocado, pickled cucumber</p>
+              </div>
+
+              <div class="scan__stats">
+                <div>
+                  <strong>520</strong>
+                  <small>kcal</small>
+                </div>
+                <div>
+                  <strong>32g</strong>
+                  <small>protein</small>
+                </div>
+                <div>
+                  <strong>38g</strong>
+                  <small>carbs</small>
+                </div>
+                <div>
+                  <strong>22g</strong>
+                  <small>fats</small>
+                </div>
+              </div>
+
+              <div class="scan__actions">
+                <button class="phone-btn phone-btn--ghost">Retake</button>
+                <button class="phone-btn phone-btn--primary">Confirm meal</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">05</span>
+          <div>
+            <h3>AI Scan</h3>
+            <p>Point, breathe, confirm. On-device vision keeps your plate private.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== GROUP 3 — RECIPE FLOW ===================== -->
+  <section class="group group--recipe">
+    <header class="group__head">
+      <div>
+        <span class="section-label">Flow · User Story 02</span>
+        <h2 class="section-title">Find a recipe <em>that suits you.</em></h2>
+      </div>
+      <p class="group__lede">
+        Discovery as a gentle act. Four filters that match how people
+        actually talk about food. A recipe page that reads like a small
+        printed card. And a saved collection, kept like a private cookbook.
+      </p>
+    </header>
+
+    <div class="phones phones--three" role="list">
+
+      <!-- ============ PHONE 06 — RECIPE DISCOVERY ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen recipes">
+            <div class="phone__statusbar">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="recipes__head">
+              <p class="phone-kicker">Find a recipe</p>
+              <h3>Nourishing meals<br /><em>for today.</em></h3>
+            </div>
+
+            <div class="recipes__filters" role="tablist">
+              <button class="phone-chip phone-chip--active" role="tab" aria-selected="true">High Protein</button>
+              <button class="phone-chip" role="tab" aria-selected="false">Low Carb</button>
+              <button class="phone-chip" role="tab" aria-selected="false">Veg</button>
+              <button class="phone-chip" role="tab" aria-selected="false">Nordic</button>
+            </div>
+
+            <article class="featured">
+              <div class="featured__image">
+                <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Salmon bowl" loading="lazy" />
+                <span class="featured__badge">Editor's pick</span>
+              </div>
+              <div class="featured__body">
+                <h4>Nordic Salmon Bowl</h4>
+                <ul class="featured__meta">
+                  <li><strong>520</strong><small>kcal</small></li>
+                  <li><strong>25</strong><small>min</small></li>
+                  <li><strong>32 g</strong><small>protein</small></li>
+                </ul>
+              </div>
+            </article>
+
+            <h4 class="recipes__sub">For your goal</h4>
+
+            <ul class="rec-list">
+              <li class="rec">
+                <span class="rec__thumb">
+                  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=160&q=80" alt="" loading="lazy" />
+                </span>
+                <div class="rec__body">
+                  <strong>Lentil &amp; beet salad</strong>
+                  <small>380 kcal · 20 min</small>
+                </div>
+                <span class="rec__arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+                </span>
+              </li>
+              <li class="rec">
+                <span class="rec__thumb">
+                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=160&q=80" alt="" loading="lazy" />
+                </span>
+                <div class="rec__body">
+                  <strong>Skyr berry parfait</strong>
+                  <small>240 kcal · 5 min</small>
+                </div>
+                <span class="rec__arrow" aria-hidden="true">
+                  <svg viewBox="0 0 24 24" width="12" height="12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M9 6l6 6-6 6"/></svg>
+                </span>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">06</span>
+          <div>
+            <h3>Recipe Discovery</h3>
+            <p>Four honest filters. One featured idea. The rest, on demand.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- ============ PHONE 07 — RECIPE DETAILS ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen recipe">
+            <div class="phone__statusbar phone__statusbar--light">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="recipe__hero">
+              <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=600&q=80" alt="Salmon bowl" loading="lazy" />
+              <button class="icon-btn icon-btn--ghost recipe__back" aria-label="Back">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/></svg>
+              </button>
+              <button class="icon-btn icon-btn--ghost recipe__save" aria-label="Save">
+                <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M5 3h14v18l-7-5-7 5z"/></svg>
+              </button>
+              <span class="recipe__badge">High protein · Nordic</span>
+            </div>
+
+            <div class="recipe__body">
+              <h3 class="recipe__title">Nordic Salmon Bowl<span class="dot-acc">.</span></h3>
+
+              <ul class="recipe__meta">
+                <li><small>kcal</small><strong>520</strong></li>
+                <li><small>time</small><strong>25′</strong></li>
+                <li><small>serves</small><strong>2</strong></li>
+              </ul>
+
+              <div class="recipe__tabs">
+                <button class="is-active">Ingredients</button>
+                <button>Steps</button>
+              </div>
+
+              <ul class="ingredients">
+                <li>
+                  <span class="check is-on" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="9" height="9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="ing__name">Salmon, 200 g</span>
+                  <span class="ing__cal">280</span>
+                </li>
+                <li>
+                  <span class="check is-on" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="9" height="9" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 6L9 17l-5-5"/></svg>
+                  </span>
+                  <span class="ing__name">Quinoa, 1 cup</span>
+                  <span class="ing__cal">220</span>
+                </li>
+                <li>
+                  <span class="check" aria-hidden="true"></span>
+                  <span class="ing__name">Half an avocado</span>
+                  <span class="ing__cal">160</span>
+                </li>
+                <li>
+                  <span class="check" aria-hidden="true"></span>
+                  <span class="ing__name">Pickled cucumber</span>
+                  <span class="ing__cal">12</span>
+                </li>
+              </ul>
+
+              <div class="recipe__actions">
+                <button class="phone-btn phone-btn--primary phone-btn--full">
+                  Add to diary
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">07</span>
+          <div>
+            <h3>Recipe Details</h3>
+            <p>An editorial card. Ingredients you can tick. Steps, when ready.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+      <!-- ============ PHONE 08 — SAVED RECIPES ============ -->
+      <figure class="phone-mock" role="listitem">
+        <div class="phone">
+          <span class="phone__island" aria-hidden="true"></span>
+          <div class="phone__screen saved">
+            <div class="phone__statusbar">
+              <span>9:41</span>
+              <span class="phone__statusbar-right">
+                <svg viewBox="0 0 18 12" width="16" height="10" fill="currentColor" aria-hidden="true"><rect x="0" y="6" width="3" height="6" rx="1"/><rect x="5" y="3" width="3" height="9" rx="1"/><rect x="10" y="0" width="3" height="12" rx="1"/></svg>
+                <svg viewBox="0 0 22 12" width="20" height="10" fill="none" stroke="currentColor" stroke-width="1.4" aria-hidden="true"><rect x="0.5" y="0.5" width="18" height="11" rx="3"/><rect x="2.5" y="2.5" width="13" height="7" rx="1.5" fill="currentColor"/><rect x="20" y="4" width="1.5" height="4" rx=".5" fill="currentColor"/></svg>
+              </span>
+            </div>
+
+            <div class="saved__head">
+              <div>
+                <p class="phone-kicker">Your cookbook</p>
+                <h3>Saved<br /><em>recipes.</em></h3>
+              </div>
+              <button class="icon-btn" aria-label="Filter">
+                <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 6h16"/><path d="M7 12h10"/><path d="M10 18h4"/></svg>
+              </button>
+            </div>
+
+            <div class="saved__tabs">
+              <button class="phone-chip phone-chip--active">All · 12</button>
+              <button class="phone-chip">Breakfast</button>
+              <button class="phone-chip">Lunch</button>
+              <button class="phone-chip">Dinner</button>
+            </div>
+
+            <div class="saved__grid">
+              <a class="saved-card">
+                <span class="saved-card__image">
+                  <img src="https://images.unsplash.com/photo-1467003909585-2f8a72700288?auto=format&fit=crop&w=220&q=80" alt="" loading="lazy" />
+                  <span class="saved-card__heart" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" stroke="none"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1 7.8 7.8 7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                  </span>
+                </span>
+                <strong>Salmon bowl</strong>
+                <small>520 kcal · 25′</small>
+              </a>
+              <a class="saved-card">
+                <span class="saved-card__image">
+                  <img src="https://images.unsplash.com/photo-1488477181946-6428a0291777?auto=format&fit=crop&w=220&q=80" alt="" loading="lazy" />
+                  <span class="saved-card__heart" aria-hidden="true">
+                    <svg viewBox="0 0 24 24" width="10" height="10" fill="currentColor" stroke="none"><path d="M20.8 4.6a5.5 5.5 0 0 0-7.8 0L12 5.6l-1-1a5.5 5.5 0 1 0-7.8 7.8l1 1 7.8 7.8 7.8-7.8 1-1a5.5 5.5 0 0 0 0-7.8z"/></svg>
+                  </span>
+                </span>
+                <strong>Skyr parfait</strong>
+                <small>240 kcal · 5′</small>
+              </a>
+              <a class="saved-card">
+                <span class="saved-card__image">
+                  <img src="https://images.unsplash.com/photo-1484980972926-edee96e0960d?auto=format&fit=crop&w=220&q=80" alt="" loading="lazy" />
+                </span>
+                <strong>Rye porridge</strong>
+                <small>410 kcal · 15′</small>
+              </a>
+              <a class="saved-card">
+                <span class="saved-card__image">
+                  <img src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?auto=format&fit=crop&w=220&q=80" alt="" loading="lazy" />
+                </span>
+                <strong>Lentil bowl</strong>
+                <small>380 kcal · 20′</small>
+              </a>
+            </div>
+
+            <div class="saved__rec">
+              <p class="phone-kicker">For you</p>
+              <a class="saved-rec-card">
+                <span class="saved-rec-card__image">
+                  <img src="https://images.unsplash.com/photo-1490645935967-10de6ba17061?auto=format&fit=crop&w=200&q=80" alt="" loading="lazy" />
+                </span>
+                <div>
+                  <strong>Berry smoothie bowl</strong>
+                  <small>290 kcal · matches your goal</small>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+        <figcaption class="phone-caption">
+          <span class="phone-caption__num">08</span>
+          <div>
+            <h3>Saved Recipes</h3>
+            <p>A private cookbook — categorised, personal, never noisy.</p>
+          </div>
+        </figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+
+  <!-- ===================== CLOSE ===================== -->
+  <section class="closing">
+    <div class="closing__inner">
+      <p class="phone-kicker">End of chapter</p>
+      <h2 class="closing__title">
+        Two stories told <em>in eight quiet screens.</em>
+      </h2>
+      <p class="closing__lede">
+        That's Kostnær — a calorie calculator that doesn't shout. Thank you
+        for walking through the case study.
+      </p>
+      <div class="closing__nav">
+        <a href="../index.html" class="btn btn--secondary">
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5"/><path d="M11 18l-6-6 6-6"/></svg>
+          Back to Home
+        </a>
+        <a href="../1_branding/1_branding.html" class="btn btn--ghost">Branding</a>
+        <a href="../2_design_system/2_design_system.html" class="btn btn--ghost">Design System</a>
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="footer">
+    <div class="footer__inner">
+      <div class="footer__brand">
+        <span class="footer__mark" aria-hidden="true">
+          <svg viewBox="0 0 32 32" width="22" height="22" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M16 4c-5 6-5 12 0 18 5-6 5-12 0-18Z"/>
+            <path d="M16 22v6"/>
+          </svg>
+        </span>
+        <p class="footer__title">Kostnær</p>
+        <p class="footer__tagline"><em>Nourish</em> with intention.</p>
+      </div>
+
+      <nav class="footer__nav" aria-label="Footer">
+        <ul>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="../1_branding/1_branding.html">Branding</a></li>
+          <li><a href="../2_design_system/2_design_system.html">Design System</a></li>
+          <li><a href="./3_screens.html">Key Screens</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__meta">
+        <p>Designed by <em>Marta Snitynska</em></p>
+        <p>UX/UI Test Task · for JITO</p>
+        <p>© 2026 — Volume 02</p>
+      </div>
+    </div>
+  </footer>
+
 </body>
 </html>
