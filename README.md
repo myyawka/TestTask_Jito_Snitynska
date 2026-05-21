@@ -10,3 +10,5 @@ Or you can just use this link:
 # https://myyawka.github.io/TestTask_Jito_Snitynska/
 
 Both can be opened in incognito
+VIDEO:
+https://drive.google.com/file/d/1Q2iVqBjpfj0o6ASG6vwyp6VfQSO4u73h/view?usp=sharing
